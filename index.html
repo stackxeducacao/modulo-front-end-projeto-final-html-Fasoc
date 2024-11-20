@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="/Imagens/WIN_20240531_18_25_25_Pro.jpg" type="Imagem/x-icon">
+    <link rel="stylesheet" href="pagina.css">
+    <title> Portifólio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Portifólio Fasoc</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="intro">
+            <h2>Eu sou Fabio Sobral Cruz</h2>
+            
+            <p>Estudante de Desenvolvimento de Software</p>
+            <p>Portifólio que vai ser modificado conforme o aperfeiçoamento do aprendizado, a inteção é que vire uma vitrine dos projetos</p>
+            <img src="Imagens/Fabio.JPG" alt="Foto do Fábio">
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+            <div class="card">
+                <img src="Imagens/Calculadora.jpeg" alt="Imagem da calculadora">
+                <h3>Calculadora</h3>
+                <p>Calculadora estilizada.</p>
+                <a href="https://github.com/Fasoc/Calculadora">Ver Github</a>
+            </div>
+            <div class="card">
+                <img src="Imagens/OIP.jfif" alt="Imagem de tecnologia">
+                <h3>Blog de tecnologia</h3>
+                <p>Blog com notícias de tecnologia separadas por categorias.</p>
+                <a href="https://github.com/Fasoc/Blog">Ver Github</a>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor iniciante e gosto de experimentar coisas diferentes. Atualmente atuando com HTML, CSS e JavaScript.</p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formContato" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <div id="error-message" class="error"></div>
+        </form>
+    </section>
+</body>
+</html>
+
